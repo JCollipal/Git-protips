@@ -1,0 +1,77 @@
+
+COMANDOS INICIALES
+
+pwd -> saber en que directorio estamos
+ls -> listar archivos 
+ls -a -> listado de directorios y archivos ocultos que comienzan con un punto(.) antes de sunombre
+cd -> navegación entre directorio
+cd ~ -> volver al home de nuestro equipo (directorio raiz)
+cd .. -> permite volver un directorio
+
+
+COMANDOS CREAR CARPETA O ARCHIVOS
+
+mkdir directorio -> crear un directorio, seguido del nombre del directorio
+touch -> crea un archivo, indicando nombre y extension
+touch nombre_del_archivo.extension
+nano -> crear y editar un ficeho con el nombre
+nano nombre_archivo
+cat -> nombre_archivo
+cp -> copiar archivo, directorio
+cp archivo.extension ruta_destino/nuevo_archivo.extension
+cp -r directorio_copiado directorio_destino -> copiar directorio
+mv -> mover archivos y directorios
+mv archivo.extension directorio_destino/
+mv directorio_origen directorio_destino/
+mv -> renombrar directorio y/o archivo
+mv Directorio Directorion_renombrado (lo mismo para archivos)
+rm -> borrar archivos y con un argumento se puede borrar directorio
+rm archivo.extension
+rm -r directorio
+rm -rf -> elimina carpeta completa y su contenido de manera recursiva
+
+___________________________________________________________________________________________
+
+CONFIGURANDO GIT
+
+git config --global user.name "Tu Nombre" -> nombre visible en cada interacción
+git config --global user.emaail tucorreo@mail.com
+git config --list -> lista con información ingresada
+___________________________________________________________________________________________
+
+INICIALIZAR GIT
+
+git init - inicializa los servicios GIT, habilita control versiones
+git add . - los archivos dentro de la carpeta se agregan al control de versiones
+git commit -> guardar cambios
+gti commit -m "<DESCRIPCION>" -  control descriptivo de los cambios
+git status - permite ver cambios realizados
+
+git log - permite revisar todos los COMMITS de un proyecto (estado global)
+
+git commit --amend --no-edit -> confirma el cambio en el último commit realizado
+
+-------------------------------------------------------------------------------------------
+
+MANEJO DE RAMAS (branch)
+
+git branch <nombre-rama> -> crea una rama
+git branch -a -> lista las ramas
+git branch -d <nombre-rama> -> elimina rama (modo local)
+git push origin -d <nombre-rama> -> elimna rama de git (remoto)
+
+git checkout <nombre-rama> -> cambiar de rama
+git checkout -b <nombre-rama> -> crea y posiciona en la rama creada
+___________________________________________________________________________________________
+
+Subiendo a GitHub (Parte I)
+
+git push remote branch -> comando para subir los cambios al repositorio remoto, remote: punto destino / branch: rama del proyecto
+git push origin main -> sube los cambios a la rama principal
+
+___________________________________________________________________________________________
+
+Bajando desde Github
+
+git pull origin main -> comando para traer los cambios en main
+
