@@ -59,6 +59,7 @@ git branch <nombre-rama> -> crea una rama
 git branch -a -> lista las ramas
 git branch -d <nombre-rama> -> elimina rama (modo local)
 git push origin -d <nombre-rama> -> elimna rama de git (remoto)
+git push -u origin <branch-name> -> empuja una rama al servidor remoto.
 
 git checkout <nombre-rama> -> cambiar de rama
 git checkout -b <nombre-rama> -> crea y posiciona en la rama creada
